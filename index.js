@@ -2,9 +2,6 @@
 
 var midi = require('music.note.midi')
 
-// decimal number
-var NUM = /^\d+(?:\.\d+)?$/
-
 /**
  * Get the pitch frequency in herzs with custom concert tuning
  *
@@ -31,7 +28,7 @@ module.exports = function freq (tuning, pitch) {
   if (arguments.length > 1) return freq(tuning)(pitch)
 
   return function (p) {
-    if (NUM.test(p)) return +p
+    if (!isNaN(p)) return p
     var m = midi(p)
     if (!m) return null
     return Math.pow(2, (m - 69) / 12) * tuning

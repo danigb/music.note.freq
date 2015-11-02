@@ -55,7 +55,7 @@
 <li>
 <a href="https://github.com/danigb/music.note.freq/blob/master/index.js">index.js</a>
 <span>, </span>
-<a href="https://github.com/danigb/music.note.freq/blob/master/index.js#L8">lineno 8</a>
+<a href="https://github.com/danigb/music.note.freq/blob/master/index.js#L5">lineno 5</a>
 </li>
 </ul></dd>
 </dl>

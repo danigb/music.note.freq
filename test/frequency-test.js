@@ -16,5 +16,12 @@ vows.describe('music.note.freq').addBatch({
   'custom tuning': function () {
     assert.deepEqual(['A4', 'A#4', 'B4'].map(freq(444)),
     [ 444, 470.40161389552713, 498.3731494493616 ])
+  },
+  'bypass numbers': function () {
+    assert.equal(freq(444, 440), 440)
+  },
+  'invalid notes': function () {
+    assert.equal(freq(null, null), null)
+    assert.equal(freq(null, 'blah'), null)
   }
 }).export(module)

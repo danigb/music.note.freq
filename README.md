@@ -8,7 +8,7 @@
 [![license](https://img.shields.io/npm/l/music.note.freq.svg)](https://www.npmjs.com/package/music.note.freq)
 [![music.kit](https://img.shields.io/badge/music-kit-yellow.svg)](https://www.npmjs.com/package/music.kit)
 
-`music.note.freq` is a tiny function (939 bytes minified) to get the frequency of a pitch:
+`music.note.freq` is a function (911 bytes minified) to get the frequency of a pitch:
 
 ```js
 var freq = require('music.note.freq')
